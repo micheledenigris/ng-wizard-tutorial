@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-wizard-popup App', () => {
+describe('ng-wizard-tutorial App', () => {
   let page: AppPage;
 
   beforeEach(() => {
