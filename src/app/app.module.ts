@@ -9,6 +9,9 @@ import { WizardStateService } from './wizard-state.service';
 import { CurrentDirective } from './current.directive';
 import { NextStepDirective } from './next-step.directive';
 import { PreviusStepDirective } from './previus-step.directive';
+import { CloseDirective } from './close.directive';
+import { GoToDirective } from './go-to.directive';
+import { FocusOnStepsDirective } from './focus-on-step.directive';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { PreviusStepDirective } from './previus-step.directive';
     WizardStepComponent,
     CurrentDirective,
     NextStepDirective,
-    PreviusStepDirective
+    PreviusStepDirective,
+    CloseDirective,
+    GoToDirective,
+    FocusOnStepsDirective
   ],
   imports: [
     BrowserModule

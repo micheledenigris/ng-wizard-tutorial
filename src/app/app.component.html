@@ -1,24 +1,46 @@
 <div style="display:flex;">
-  <div style="width:200px;height:200px;margin:10% 10%;background:red" #red></div>
-  <div style="width:200px;height:200px;margin:10% 10%;background:yellow" #yellow></div>
-  <div style="width:200px;height:200px;margin:10% 10%;background:blue" #blu></div>
+  <div style="width:200px;height:200px;margin:10% 5%;background:red" #red></div>
+  <div style="width:200px;height:200px;margin:10% 5%;background:yellow" #yellow></div>
+  <div style="width:200px;height:200px;margin:10% 5%;background:blue" #blu></div>
+  <div style="width:200px;height:200px;margin:10% 5%;background:green" #green></div>
 </div>
 
 
-<wizard>
-  <wizard-step [focus]="red" current [position]="'top'">
-    <h3 class="popover-header">Popover title</h3>
+<wizard focusOnSteps>
+  <wizard-step [element]="red" current [position]="'top'" [focusOnElement]="true">
     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
-    <div style="padding: 10px;">
+    <div style="padding: 10px;text-align:center">
       <button class="btn btn-default">Previus</button>
       <button class="btn btn-primary" nextStep>Continue</button>
     </div>
   </wizard-step>
-  <wizard-step [focus]="yellow" [position]="'bottom'">
+  <wizard-step [element]="yellow" [position]="'bottom'" [focusOnElement]="true">
     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
-    <div style="padding: 10px;">
+    <div style="padding: 10px;text-align:center">
       <button class="btn btn-default" previusStep>Previus</button>
-      <button class="btn btn-primary">Continue</button>
+      <button class="btn btn-primary" nextStep>Continue</button>
+    </div>
+  </wizard-step>
+  <wizard-step [element]="blu" [position]="'right'" [focusOnElement]="true">
+    <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
+    <div style="padding: 10px;text-align:center">
+      <button class="btn btn-default" previusStep>Previus</button>
+      <button class="btn btn-primary" nextStep>Continue</button>
+      <button class="btn btn-primary" close>Close</button>
+    </div>
+  </wizard-step>
+  <wizard-step [element]="green" [position]="'left'">
+    <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
+    <div style="padding: 10px;text-align:center">
+      <button class="btn btn-default" previusStep>Previus</button>
+      <button class="btn btn-default" goTo [stepNumber]="5">Vai al 2!</button>
+    </div>
+  </wizard-step>
+  <wizard-step [top]="400" [left]="400">
+    <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
+    <div style="padding: 10px;text-align:center">
+      <button class="btn btn-default" previusStep>Previus</button>
+      <button class="btn btn-default" goTo [stepNumber]="2">Vai al 2!</button>
     </div>
   </wizard-step>
 </wizard>
