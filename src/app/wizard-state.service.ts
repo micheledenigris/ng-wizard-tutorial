@@ -33,6 +33,9 @@ export class WizardStateService {
   public close() {
     for (let i in this.wizardSteps)
       this.disableStep(parseInt(i));
+
+    let child = document.getElementById("focusOnStep");
+    if (child) child.remove();
   }
 
   public isLastStep() {
@@ -47,6 +50,7 @@ export class WizardStateService {
 
   private disableStep(i: number) {
     this.wizardSteps[i].current = false;
+
     if (this.wizardSteps[i].element)
       this.wizardSteps[i].element.style.zIndex = "0";
   }

@@ -11,8 +11,8 @@ export class FocusOnStepsDirective {
     }
 
     private enableFocus() {
-        let child = document.querySelectorAll("enable-focus");
-        if (child.length != 0)
+        let child = document.getElementById("focusOnStep");
+        if (child)
             return;
 
         this.add();
@@ -20,7 +20,8 @@ export class FocusOnStepsDirective {
 
     private add() {
         let container = document.createElement("div");
-        container.className = "enable-focus";
+        container.className = "focus-on-step";
+        container.id = "focusOnStep";
         document.body.appendChild(container);
     }
 }
