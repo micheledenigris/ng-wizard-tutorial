@@ -1,20 +1,20 @@
 <div style="display:flex;">
-  <div style="width:200px;height:200px;margin:5%;background:red" #red></div>
-  <div style="width:200px;height:200px;margin:5%;background:yellow" #yellow></div>
-  <div style="width:200px;height:200px;margin:5%;background:blue" #blu></div>
+  <div style="width:200px;height:200px;margin:10% 10%;background:red" #red></div>
+  <div style="width:200px;height:200px;margin:10% 10%;background:yellow" #yellow></div>
+  <div style="width:200px;height:200px;margin:10% 10%;background:blue" #blu></div>
 </div>
 
 
 <wizard>
-  <wizard-step [focus]="red" current>
+  <wizard-step [focus]="red" current [position]="'top'">
     <h3 class="popover-header">Popover title</h3>
     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
     <div style="padding: 10px;">
-      <button class="btn btn-default" previusStep>Previus</button>
+      <button class="btn btn-default">Previus</button>
       <button class="btn btn-primary" nextStep>Continue</button>
     </div>
   </wizard-step>
-  <wizard-step [focus]="yellow">
+  <wizard-step [focus]="yellow" [position]="'bottom'">
     <div class="popover-body">And here's some amazing content. It's very engaging. Right?</div>
     <div style="padding: 10px;">
       <button class="btn btn-default" previusStep>Previus</button>

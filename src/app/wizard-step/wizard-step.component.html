@@ -1,4 +1,4 @@
-<div class="popover fade show bs-popover-right" [ngStyle]="{'top': top + 'px', 'left': left + 'px'}" *ngIf="current">
-  <div class="arrow"></div>
+<div  class="popover fade show bs-popover-right" [ngStyle]="{'top': top + 'px', 'left': left + 'px'}" *ngIf="current" #step>
+  <div class="arrow" #arrow></div>
   <ng-content></ng-content>
 </div>

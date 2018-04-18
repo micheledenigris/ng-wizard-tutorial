@@ -7,4 +7,5 @@ export class WizardStep {
     @Input() top: number;
     @Input() left: number;
     @Input() focus: HTMLElement;
+    @Input() position: 'top' | 'bottom' | 'left' | 'right';
 }

@@ -4,7 +4,6 @@ import { WizardStep } from './wizard-step/wizard-step';
 @Injectable()
 export class WizardStateService {
 
-  private current: number = -1;
   private wizardSteps: WizardStep[] = [];
 
   constructor() { }
@@ -25,7 +24,14 @@ export class WizardStateService {
     this.wizardSteps[currentIndex - 1].current = true;
   }
 
-  private isLastStep() {
+  public isLastStep() {
+    if (this.currentIndex() == this.wizardSteps.length) return true;
+    return false;
+  }
+
+  public isFirstStep() {
+    if (this.currentIndex() == 0) return true;
+    return false;
   }
 
   private currentIndex() {

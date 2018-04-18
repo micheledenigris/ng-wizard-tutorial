@@ -10,6 +10,7 @@ export class PreviusStepDirective {
 
   @HostListener("click", ["$event"])
   public onPreviusStep(e) {
+    if (this.wizardState.isFirstStep()) return;
     this.wizardState.previusStep();
   }
 
