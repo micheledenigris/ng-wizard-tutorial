@@ -12,6 +12,7 @@ import { PreviusStepDirective } from './previus-step.directive';
 import { CloseDirective } from './close.directive';
 import { GoToDirective } from './go-to.directive';
 import { FocusOnStepsDirective } from './focus-on-step.directive';
+import { ResetDirective } from './reset.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FocusOnStepsDirective } from './focus-on-step.directive';
     PreviusStepDirective,
     CloseDirective,
     GoToDirective,
-    FocusOnStepsDirective
+    FocusOnStepsDirective,
+    ResetDirective
   ],
   imports: [
     BrowserModule
