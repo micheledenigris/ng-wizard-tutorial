@@ -30,6 +30,15 @@ export class WizardStateService {
     this.wizardSteps[stepNumber].current = true;
   }
 
+  public reset(defaultIndex?: number) {
+    if (!defaultIndex) {
+      defaultIndex = 0;
+    } else {
+      defaultIndex--;
+    }
+    this.goTo(defaultIndex);
+  }
+
   public close() {
     for (let i in this.wizardSteps)
       this.disableStep(parseInt(i));

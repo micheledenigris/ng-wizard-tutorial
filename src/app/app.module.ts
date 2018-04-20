@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './component/app.component';
 import { WizardComponent } from './component/wizard/wizard.component';
 import { WizardStepComponent } from './component/wizard-step/wizard-step.component';
@@ -12,6 +11,8 @@ import { PreviusStepDirective } from './directive/previus-step.directive';
 import { CloseDirective } from './directive/close.directive';
 import { GoToDirective } from './directive/go-to.directive';
 import { FocusOnStepsDirective } from './directive/focus-on-step.directive';
+import { ResetDirective } from './directive/reset.directive';
+
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FocusOnStepsDirective } from './directive/focus-on-step.directive';
     PreviusStepDirective,
     CloseDirective,
     GoToDirective,
-    FocusOnStepsDirective
+    FocusOnStepsDirective,
+    ResetDirective
   ],
   imports: [
     BrowserModule
