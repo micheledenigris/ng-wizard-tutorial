@@ -1,6 +1,6 @@
 import { Directive, HostListener, Host } from '@angular/core';
-import { WizardStateService } from './wizard-state.service';
-import { WizardStepComponent } from './wizard-step/wizard-step.component';
+import { WizardStateService } from '../service/wizard-state.service';
+import { WizardStepComponent } from '../component/wizard-step/wizard-step.component';
 
 @Directive({
   selector: '[nextStep]'

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WizardStep } from './wizard-step/wizard-step';
+import { WizardStep } from '../component/wizard-step/wizard-step';
 
 @Injectable()
 export class WizardStateService {

@@ -3,8 +3,7 @@ import { WizardStep } from './wizard-step';
 
 @Component({
   selector: 'wizard-step',
-  templateUrl: './wizard-step.component.html',
-  styleUrls: ['./wizard-step.component.css']
+  templateUrl: './wizard-step.component.html'
 })
 export class WizardStepComponent extends WizardStep implements AfterViewChecked {
   @ViewChild('step') step: ElementRef;

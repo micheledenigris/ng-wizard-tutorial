@@ -1,5 +1,5 @@
 import { Directive, Host, HostListener } from '@angular/core';
-import { WizardStateService } from './wizard-state.service';
+import { WizardStateService } from '../service/wizard-state.service';
 
 @Directive({
   selector: '[close]'

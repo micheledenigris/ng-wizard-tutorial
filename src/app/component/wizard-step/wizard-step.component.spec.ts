@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WizardStepComponent } from './wizard-step.component';
 
 describe('WizardStepComponent', () => {

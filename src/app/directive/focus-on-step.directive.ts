@@ -1,5 +1,5 @@
 import { Directive, Host } from '@angular/core';
-import { WizardStepComponent } from './wizard-step/wizard-step.component';
+import { WizardStepComponent } from '../component/wizard-step/wizard-step.component';
 
 @Directive({
     selector: '[focusOnSteps]'
